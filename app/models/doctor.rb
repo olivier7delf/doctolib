@@ -1,7 +1,7 @@
 class Doctor < ApplicationRecord
   # We can add email for keep it for later. -> email user != email pro
   belongs_to :user
-  has_many :specialities
+  has_many :doctor_specialities
   has_many :schedules
 
   validates :phone, presence: true, length: { minimum: 10, maximum: 10 }

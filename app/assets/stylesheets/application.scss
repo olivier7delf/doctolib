@@ -11,3 +11,19 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+.banner {
+  position: relative;
+  text-align: center;
+  .title {
+  position: absolute;
+  top: 30%;
+  //left: 50%;
+  // text-align: center;
+  text-align:center;
+  width: 100%;
+  // transform: translate(-50%, -50%);
+}
+}
+
+

@@ -1,5 +1,5 @@
 class Speciality < ApplicationRecord
-  belongs_to :doctor
+  has_many :doctor_specialities
 
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: true
 end
